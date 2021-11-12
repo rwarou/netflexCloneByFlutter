@@ -1,2 +1,2 @@
-# 넷플렉스 클론 코딩 by flutter
+# 넷플릭스 클론 코딩 by flutter
 ## by rwarou
