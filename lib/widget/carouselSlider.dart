@@ -46,7 +46,74 @@ class _CarouselImageState extends State<CarouselImage> {
             ),
           ),
           Container(
-            child: Text(_currentKeyword),
+            padding: EdgeInsets.fromLTRB(0, 10, 0, 3),
+            child: Text(
+              _currentKeyword,
+              style: TextStyle(fontSize: 11),
+            ),
+          ),
+          Container(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                Container(
+                  child: Column(
+                    children: <Widget>[
+                      likes[_currentPage]
+                          ? IconButton(
+                              icon: Icon(Icons.check),
+                              onPressed: () {},
+                            )
+                          : IconButton(
+                              icon: Icon(Icons.add),
+                              onPressed: () {},
+                            ),
+                      Text(
+                        'my like content',
+                        style: TextStyle(fontSize: 11),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(right: 10),
+                  child: FlatButton(
+                    color: Colors.white,
+                    onPressed: () {},
+                    child: Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.play_arrow,
+                          color: Colors.black,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.all(3),
+                        ),
+                        Text(
+                          'PLAY',
+                          style: TextStyle(color: Colors.black),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(right: 10),
+                  child: Column(
+                    children: <Widget>[
+                      IconButton(
+                        icon: Icon(Icons.info),
+                        onPressed: () {},
+                      ),
+                      Text(
+                        'INFO',
+                        style: TextStyle(fontSize: 11),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),
