@@ -8,6 +8,9 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   List<Movie> movies = [
+    Movie('사랑의 불시착', '사랑/로맨스/판타지', 'test_movie_1.png', false),
+    Movie('사랑의 불시착', '사랑/로맨스/판타지', 'test_movie_1.png', false),
+    Movie('사랑의 불시착', '사랑/로맨스/판타지', 'test_movie_1.png', false),
     Movie('사랑의 불시착', '사랑/로맨스/판타지', 'test_movie_1.png', false)
   ];
   @override
