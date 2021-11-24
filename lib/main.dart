@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:ncbf/screen/homeScreen.dart';
+import 'package:ncbf/screen/likeScreen.dart';
 import 'package:ncbf/screen/moreScreen.dart';
 import 'package:ncbf/screen/searchScreen.dart';
 import 'package:ncbf/widget/bottomBar.dart';
@@ -61,11 +62,7 @@ class _MyAppState extends State<MyApp> {
             children: <Widget>[
               HomeScreen(),
               SearchScreen(),
-              Container(
-                child: Center(
-                  child: Text('save'),
-                ),
-              ),
+              LikeScreen(),
               MoreScreen(),
             ],
           ),
